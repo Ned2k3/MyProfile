@@ -1,0 +1,211 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 24, 2022, 6:23:16 PM
+    Author     : Admin
+*/
+body{
+    height: 300px;
+    font-family: serif;
+    background-image: url('img1.jpg');
+    color: #000000;
+}
+#created{
+    position: fixed;
+    top: -50%;
+    left: 34%;
+    width: 450px;
+    height: 140px;
+    z-index: 1;
+    background: #FFFFFF;
+    border-radius: 10px;
+    visibility: hidden;
+    animation-name: alert;
+    animation-duration: 8400ms;
+    animation-iteration-count: 1;
+}
+    #created div {
+        width: 100%;
+        height: 50%;
+        padding-top: 10px;
+        padding-left: 3%;
+        color: #000000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #created span {
+        font-weight: bold;
+        font-size: 25px;
+        color: #ff0000;
+    }
+
+    #created button {
+        float: right;
+        margin-right: 10%;
+        width: 14%;
+        height: 32px;
+        border-radius: 6px;
+        background: #4959cf;
+        color: #FFFFFF;
+        border: 1px solid #000000;
+    }
+
+        #created button:hover {
+            background: #0094ff;
+            cursor: pointer;
+        }
+        
+#content{
+    position: absolute;
+       top: 5%;
+       left: 25%;
+    background: pink;
+    height: 90%;
+    width: 50%;
+    border-radius: 30px;
+    animation-name: drop;
+    animation-duration: 1200ms;
+    animation-iteration-count: 1;
+}
+#header{
+    padding-top: 50px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 25px;
+    animation-name: changeColor;
+    animation-delay: 0s;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+}
+
+#error{
+    font-size: 24px;
+    color: red;
+    margin-left: 20%;
+}
+
+input{
+    width: 60%;
+    height: 50px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-size: 30px;
+}
+
+#btn1{
+    border-radius: 6px;
+    width: 15%;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#btn1:hover{
+    background: #00ffff;
+    cursor: pointer;
+}
+#sign-up{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+#sign-up a{
+    color: blue;
+    margin-left: 1%;
+}
+hr{
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    border-color: #b4adad;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #000000;
+    }
+
+    20% {
+        color: #0a1984;
+    }
+
+    40% {
+        color: #33ffff;
+    }
+
+    60% {
+        color: #660066;
+    }
+
+    80% {
+        color: #ff0000;
+    }
+
+    100% {
+        color: #000000;
+    }
+}
+
+@keyframes drop{
+    0%{
+        top: -100%;
+    }
+    20%{
+        top: -100%;
+    }
+    40%{
+        top: 10%;
+    }
+    60%{
+        top: -20%;
+    }
+    70%{
+        top: 10%;
+    }
+    90%{
+        top: -10%;
+    }
+    100%{
+        top: 5%;
+    }
+}
+
+@keyframes alert{
+    0%{
+        top: -50%;
+    }
+    14%{
+        top: -50%;
+    }
+    22%{
+        top: 0%;
+    }
+    92%{
+        top: 0%;
+    }
+    100%{
+        top: -50%;
+    }
+}
+
+@keyframes closeAlert{
+    from{
+        top: 0%;
+    }
+    to{
+        top: -50%;
+    }
+}
+
+

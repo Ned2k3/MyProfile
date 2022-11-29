@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    height: 600px;
+    background-image: url("img4.jpg");
+    background-size: 100%;
+    color: #FFFFFF;
+}
+
+div {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    background: #000000;
+    opacity: 0.85;
+    text-align: center;
+    animation-name: showUp;
+    animation-duration: 1500ms;
+    animation-iteration-count: 1;
+}
+
+hr {
+    width: 70%;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #e12e7a;
+    animation-name: getIn;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
+
+form {
+    margin-top: 20px;
+    animation-name: getIn;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
+
+input {
+    width: 70%;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 15px;
+    padding-left: 10px;
+    background: none;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    color: #FFFFFF;
+    opacity: 0.55;
+    
+}
+
+    input::placeholder {
+        color: #FFFFFF;
+        font-size: 25px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+#eye1{
+    font-size: 22px;
+    position: absolute;
+       top: 208px;
+       left: 81%;
+    visibility: hidden;
+}
+#eye2 {
+    font-size: 22px;
+    position: absolute;
+       top: 278px;
+       left: 81%;
+    visibility: hidden;
+}
+.eyes:hover{
+    cursor: grab;
+}
+#username-error{
+    position: absolute;
+       top: 132px;
+       left: 90%;
+    font-size: 25px;
+    cursor: default;
+}
+
+#password-error{
+    position: absolute;
+       top: 202px;
+       left: 90%;
+    font-size: 25px;
+    cursor: default;
+}
+
+#re-password-error {
+    position: absolute;
+       top: 272px;
+       left: 90%;
+    font-size: 30px;
+    cursor: default;
+}
+
+button {
+    text-align: center;
+    font-size: 25px;
+    width: 70%;
+    height: 40px;
+    margin-top: 25px;
+    background-image: url('img3.jpg');
+    border: 1px outset #e7dede;
+    border-radius: 10px;
+    color: #e7dede;
+}
+
+    button:hover {
+        cursor: pointer;
+        border: 2px inset #b4adad;
+        color: red;
+    }
+
+@keyframes showUp{
+    0%{
+        opacity: 0;
+    }
+    66.67%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 0.85;
+    }
+}
+@keyframes getIn{
+    from{
+        margin-left: -500%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
